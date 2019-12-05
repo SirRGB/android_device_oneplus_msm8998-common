@@ -163,5 +163,8 @@ vendor.usb.use_ffs_mtp=1
 # VoLTE
 persist.vendor.qti.telephony.vt_cam_interface=1
 
+# Verity
+ro.apk_verity.mode=2
+
 # Zygote
 zygote.critical_window.minute=10
