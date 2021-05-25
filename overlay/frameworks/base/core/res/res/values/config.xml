@@ -495,4 +495,8 @@
          Choices are: FULL, NORMAL, OFF. -->
     <string name="db_wal_sync_mode" translatable="false">OFF</string>
 
+    <!-- Enables or disables fading edges when marquee is enabled in TextView.
+         Off by befault, since the framebuffer readback used to implement the
+         fading edges is prohibitively expensive on most GPU's. -->
+    <bool name="config_ui_enableFadingMarquee">true</bool>
 </resources>
