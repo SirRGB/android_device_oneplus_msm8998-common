@@ -145,6 +145,7 @@ ro.soc.model=MSM8998
 
 # SurfaceFlinger
 debug.sf.layer_caching_active_layer_timeout_ms=1000
+ro.surface_flinger.supports_background_blur=1
 
 # Timeservice
 persist.vendor.delta_time.enable=true
