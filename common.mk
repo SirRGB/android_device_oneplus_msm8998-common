@@ -403,10 +403,6 @@ PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
 
-# Tri-state-key
-PRODUCT_PACKAGES += \
-    KeyHandler
-
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
