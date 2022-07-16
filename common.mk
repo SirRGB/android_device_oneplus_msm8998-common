@@ -147,6 +147,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/FOSSConfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/FOSSConfig.xml
 
+# Doze
+PRODUCT_PACKAGES += \
+    OplusDoze
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.2.vendor \
