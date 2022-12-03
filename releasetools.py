@@ -10,7 +10,13 @@ import hashlib
 import common
 import re
 
+def OTA_Assertions(info):
+  # Disable VINTF checks
+  common.OPTIONS.skip_compatibility_check = True
+
 def FullOTA_Assertions(info):
+  OTA_Assertions(info)
+
   AddVendorAssertion(info)
 
   if "RADIO/filemap" not in info.input_zip.namelist():
@@ -33,6 +39,7 @@ def FullOTA_Assertions(info):
   return
 
 def IncrementalOTA_Assertions(info):
+  OTA_Assertions(info)
   AddVendorAssertion(info)
   AddModemAssertion(info)
   return
