@@ -49,6 +49,7 @@ persist.radio.multisim.config=dsds
 ril.subscription.types=NV,RUIM
 ro.telephony.call_ring.multiple=false
 ro.telephony.default_network=22,20
+ro.telephony.handle_audio_direction_changes_between_call_state_changes=false
 telephony.lteOnCdmaDevice=1
 
 # SurfaceFlinger
