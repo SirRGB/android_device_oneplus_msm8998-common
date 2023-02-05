@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.spark.device.DeviceSettings;
+package com.lineageos.device.DeviceSettings;
 
 import android.app.Fragment;
 import android.content.Context;
@@ -35,8 +35,8 @@ import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceManager;
 import androidx.preference.SwitchPreference;
 
-import com.android.internal.lineage.hardware.LineageHardwareManager; // Need FWB support
-import com.android.internal.lineage.hardware.TouchscreenGesture; // Need FWB support
+import com.android.internal.custom.hardware.LineageHardwareManager; // Need FWB support
+import com.android.internal.custom.hardware.TouchscreenGesture; // Need FWB support
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 import com.android.settingslib.collapsingtoolbar.R;
