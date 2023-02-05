@@ -1,5 +1,5 @@
 /*
-* Copyright (C) 2016 The OmniROM Project
+* Copyright (C) 2017 The OmniROM Project
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -15,26 +15,21 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package com.spark.device.DeviceSettings.ModeSwitch;
+package com.lineageos.device.DeviceSettings;
 
-import com.spark.device.DeviceSettings.Utils;
+import android.os.Bundle;
 
-public class HBMModeSwitch {
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
+import com.android.settingslib.collapsingtoolbar.R;
 
-    private static final String FILE = "/sys/devices/virtual/graphics/fb0/hbm";
+public class DeviceSettingsActivity extends CollapsingToolbarBaseActivity {
 
-    public static String getFile() {
-        if (Utils.fileWritable(FILE)) {
-            return FILE;
-        }
-        return null;
-    }
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-    public static boolean isSupported() {
-        return Utils.fileWritable(getFile());
-    }
-
-    public static boolean isCurrentlyEnabled() {
-        return Utils.getFileValueAsBoolean(getFile(), false);
+        getFragmentManager().beginTransaction()
+                .add(R.id.content_frame, new DeviceSettings())
+                .commit();
     }
 }
