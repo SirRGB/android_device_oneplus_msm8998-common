@@ -547,4 +547,10 @@
          Off by befault, since the framebuffer readback used to implement the
          fading edges is prohibitively expensive on most GPU's. -->
     <bool name="config_ui_enableFadingMarquee">true</bool>
+
+    <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
+    <integer-array name="config_availableColorModes">
+        <item>0</item>
+    </integer-array>
+
 </resources>
