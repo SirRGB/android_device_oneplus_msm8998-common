@@ -395,6 +395,10 @@ PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
 
+# Updater
+PRODUCT_PACKAGES += \
+    Updater
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
