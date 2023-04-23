@@ -78,7 +78,7 @@ public class DeviceSettings extends PreferenceFragment
         mFpsInfo = findPreference(KEY_FPS_INFO);
         mFpsInfo.setChecked(isFPSOverlayRunning());
         mFpsInfo.setOnPreferenceChangeListener(this);
-
+        
         mButtonSwap = (TwoStatePreference) findPreference(KEY_BUTTON_SWAP);
         if (!sIsOnePlus5t) {
             mButtonSwap.setEnabled(ButtonSwap.isSupported());
