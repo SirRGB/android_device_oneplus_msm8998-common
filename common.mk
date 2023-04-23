@@ -127,8 +127,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0
 
 # Device Settings
-PRODUCT_PACKAGES += \
-    DeviceSettings
+#PRODUCT_PACKAGES += \
+#    DeviceSettings
 
 # Display
 PRODUCT_PACKAGES += \
