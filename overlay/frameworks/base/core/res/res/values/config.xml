@@ -475,4 +475,10 @@
          Off by befault, since the framebuffer readback used to implement the
          fading edges is prohibitively expensive on most GPU's. -->
     <bool name="config_ui_enableFadingMarquee">true</bool>
+
+    <!-- Whether device has physical tri state switch -->
+    <bool name="config_hasAlertSlider">true</bool>
+
+    <!-- Whether device has dash charging support -->
+    <bool name="config_hasDashCharger">true</bool>
 </resources>
