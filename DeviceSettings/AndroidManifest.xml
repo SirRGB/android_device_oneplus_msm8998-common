@@ -25,10 +25,6 @@
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.CAMERA" />
 
-    <permission
-        android:name="com.android.touch.gestures.TRIGGER_SCREEN_OFF_GESTURE"
-        android:protectionLevel="signatureOrSystem" />
-
     <protected-broadcast android:name="com.lineageos.device.DeviceSettings.UPDATE_SETTINGS" />
 
     <uses-sdk
@@ -78,14 +74,6 @@
             android:name=".TouchscreenGestureSettings"
             android:label="@string/touchscreen_gesture_settings_title"
             android:theme="@style/Theme.SubSettingsBase">
-        </activity>
-
-        <activity
-            android:name=".ScreenOffLaunchGestureActivity"
-            android:permission="com.lineageos.device.DeviceSettings.TRIGGER_SCREEN_OFF_GESTURE"
-            android:excludeFromRecents="true"
-            android:exported="true"
-            android:label="@string/touchscreen_gesture_settings_title">
         </activity>
 
         <receiver android:name="com.lineageos.device.DeviceSettings.Startup" >
