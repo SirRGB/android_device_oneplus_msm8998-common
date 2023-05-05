@@ -411,6 +411,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/oneplus \
     hardware/qcom-caf/common/libqti-perfd-client
 
+QCOM_SOONG_NAMESPACE := $(LOCAL_PATH)/qcom-caf
+
 # Speed profile services and wifi-service to reduce RAM and storage
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
