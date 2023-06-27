@@ -22,6 +22,9 @@ jobs:
         git fetch https://github.com/LineageOS/android_device_oneplus_msm8998-common.git lineage-20
         git rebase FETCH_HEAD
         git push -f
+        git checkout crdroid-13
+        git rebase lineage-20
+        git push -f
       env:
         GITHUB_EMAIL: ${{ secrets.EMAIL }}
         GITHUB_TOKEN: ${{ secrets.TOKEN }}
