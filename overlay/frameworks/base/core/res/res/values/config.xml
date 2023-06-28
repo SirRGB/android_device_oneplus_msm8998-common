@@ -494,4 +494,7 @@
     <string-array name="config_deviceKeyHandlerClasses" translatable="false">
         <item>com.android.device.DeviceSettings.KeyHandler</item>
     </string-array>
+
+    <!-- Default value for performant auth feature. -->
+    <bool name="config_performantAuthDefault">true</bool>
 </resources>
