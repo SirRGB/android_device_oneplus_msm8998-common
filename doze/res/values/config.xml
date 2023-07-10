@@ -10,5 +10,5 @@
     <string name="pocket_sensor_type">android.sensor.proximity</string>
 
     <!-- Sensor trigger values -->
-    <item name="pocket_sensor_value" format="float" type="dimen">5.0002785</item>
+    <item name="pickup_sensor_value" format="float" type="dimen">5.0002785</item>
 </resources>
