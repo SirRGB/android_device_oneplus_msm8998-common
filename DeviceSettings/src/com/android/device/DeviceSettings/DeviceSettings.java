@@ -34,6 +34,7 @@ import androidx.preference.TwoStatePreference;
 
 import com.android.device.DeviceSettings.ModeSwitch.DCModeSwitch;
 import com.android.device.DeviceSettings.ModeSwitch.HBMModeSwitch;
+import com.android.device.DeviceSettings.audio.*;
 
 public class DeviceSettings extends PreferenceFragment
         implements Preference.OnPreferenceChangeListener {
@@ -52,6 +53,12 @@ public class DeviceSettings extends PreferenceFragment
     public static final String KEY_BUTTON_SWAP = "button_swap";
     public static final String KEY_CHG_VOLTAGE_CHECK = "disableChargerVoltageCheck";
 
+    public static final String KEY_AUDIO_CATEGORY = "audio";
+    public static final String KEY_AUDIO_EAR = "earpiece_gain";
+    public static final String KEY_AUDIO_HEADPHONE = "headphone_gain";
+    public static final String KEY_AUDIO_MIC = "mic_gain";
+    public static final String KEY_AUDIO_SPEAKER = "speaker_gain";
+
     private static final boolean sIsOnePlus5t = android.os.Build.DEVICE.equals("OnePlus5T");
     private PreferenceCategory mButtonSwapCategory;
     private SwitchPreference mButtonSwap;
@@ -60,6 +67,11 @@ public class DeviceSettings extends PreferenceFragment
     private SwitchPreference mHBMModeSwitch;
     private SwitchPreference mFpsInfo;
     private VibratorStrengthPreference mVibratorStrength;
+
+    private EarpieceGainPreference mEarpieceGainPref;
+    private HeadphoneGainPreference mHeadphoneGainPref;
+    private MicGainPreference mMicGainPref;
+    private SpeakerGainPreference mSpeakerGainPref;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -97,6 +109,45 @@ public class DeviceSettings extends PreferenceFragment
         mChgVoltageCheck.setEnabled(ChgVoltageCheck.isSupported());
         mChgVoltageCheck.setChecked(ChgVoltageCheck.isCurrentlyEnabled());
         mChgVoltageCheck.setOnPreferenceChangeListener(new ChgVoltageCheck());
+
+        int audiogainsRemoved = 0;
+        PreferenceCategory mAudioCategory = (PreferenceCategory) findPreference(KEY_AUDIO_CATEGORY);
+
+        mEarpieceGainPref = (EarpieceGainPreference) findPreference(KEY_AUDIO_EAR);
+        if (mEarpieceGainPref != null && EarpieceGainPreference.isSupported()) {
+            mEarpieceGainPref.setEnabled(true);
+        } else {
+            mEarpieceGainPref.getParent().removePreference(mEarpieceGainPref);
+            audiogainsRemoved += 1;
+        }
+
+        mHeadphoneGainPref = (HeadphoneGainPreference) findPreference(KEY_AUDIO_HEADPHONE);
+        if (mHeadphoneGainPref != null && HeadphoneGainPreference.isSupported()) {
+            mHeadphoneGainPref.setEnabled(true);
+        } else {
+            mHeadphoneGainPref.getParent().removePreference(mHeadphoneGainPref);
+            audiogainsRemoved += 1;
+        }
+
+        mMicGainPref = (MicGainPreference) findPreference(KEY_AUDIO_MIC);
+        if (mMicGainPref != null && MicGainPreference.isSupported()) {
+            mMicGainPref.setEnabled(true);
+        } else {
+            mMicGainPref.getParent().removePreference(mMicGainPref);
+            audiogainsRemoved += 1;
+        }
+
+        mSpeakerGainPref = (SpeakerGainPreference) findPreference(KEY_AUDIO_SPEAKER);
+        if (mSpeakerGainPref != null && SpeakerGainPreference.isSupported()) {
+            mSpeakerGainPref.setEnabled(true);
+        } else {
+            mSpeakerGainPref.getParent().removePreference(mSpeakerGainPref);
+            audiogainsRemoved += 1;
+        }
+
+        if (audiogainsRemoved == 4) {
+            mAudioCategory.getParent().removePreference(mAudioCategory);
+        }
     }
 
     @Override
