@@ -386,14 +386,6 @@ on property:sys.boot_completed=1
     # WDSP FW boot sysfs node used by STHAL
     chown media audio /sys/kernel/wcd_cpe0/fw_name
 
-    # Sound control: various audio gain controls
-    chown system system /sys/kernel/sound_control/earpiece_gain
-    chown system system /sys/kernel/sound_control/headphone_gain
-    chown system system /sys/kernel/sound_control/mic_gain
-    chmod 664 /sys/kernel/sound_control/earpiece_gain
-    chmod 664 /sys/kernel/sound_control/headphone_gain
-    chmod 664 /sys/kernel/sound_control/mic_gain
-
     # Let kernel know our image version/variant/crm_version
     write /sys/devices/soc0/select_image 10
     write /sys/devices/soc0/image_version "10:${ro.build.id}:${ro.build.version.incremental}"
