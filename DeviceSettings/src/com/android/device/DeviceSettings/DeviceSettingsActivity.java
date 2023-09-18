@@ -20,7 +20,6 @@ package com.android.device.DeviceSettings;
 import android.os.Bundle;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import com.android.settingslib.widget.R;
 
 public class DeviceSettingsActivity extends CollapsingToolbarBaseActivity {
 
@@ -29,7 +28,9 @@ public class DeviceSettingsActivity extends CollapsingToolbarBaseActivity {
         super.onCreate(savedInstanceState);
 
         getFragmentManager().beginTransaction()
-                .add(R.id.content_frame, new DeviceSettings())
-                .commit();
+                .add(
+                    com.android.settingslib.collapsingtoolbar.R.id.content_frame,
+                    new DeviceSettings()
+                ).commit();
     }
 }
