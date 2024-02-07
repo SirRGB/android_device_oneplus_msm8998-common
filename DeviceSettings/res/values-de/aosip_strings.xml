@@ -14,21 +14,6 @@
 <resources>
     <string name="device_title">OnePlus Einstellungen</string>
     <string name="device_summary">Stelle OnePlus spezifische Handyeinstellungen ein</string>
-    <!-- Display modes -->
-    <string name="display_title">Bildschirmmodus</string>
-    <string name="display_summary">Einstellungen und Präferenzen für das Display anpassen</string>
-    <string name="srgb_mode_summary"></string>
-    <string name="srgb_mode_title">sRGB-Modus</string>
-    <string name="adaptive_mode_title">Angepasster Modus</string>
-    <string name="oneplus_mode_title">OnePlus Modus</string>
-    <string name="dci_mode_summary"></string>
-    <string name="dci_mode_title">DCI-P3-Modus mit breitem Farbraum</string>
-    <string name="Night_mode_summary"></string>
-    <string name="Night_mode_title">Nachtmodus</string>
-    <string name="panel_category_title">Panelmodus</string>
-    <string name="panel_category_summary">Modi für die Panel-Farbkorrektur</string>
-    <string name="off_mode_title">Aus</string>
-    <string name="tile_panel_mode">Panelmodus</string>
     <!-- Notification slider -->
     <string name="alert_slider_category_title">Benachrichtigungs-Slider</string>
     <string name="alert_slider_selection_dialog_title">Aktion</string>

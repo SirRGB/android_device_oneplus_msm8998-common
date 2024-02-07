@@ -14,21 +14,6 @@
 <resources>
     <string name="device_title">Configuraciones de OnePlus</string>
     <string name="device_summary">Ajuste para dispositivo especifico de OnePlus</string>
-    <!-- Display modes -->
-    <string name="display_title">Modos de visualización</string>
-    <string name="display_summary">Ajustar la configuración y preferencias para la pantalla</string>
-    <string name="srgb_mode_summary"></string>
-    <string name="srgb_mode_title">modo sRGB</string>
-    <string name="adaptive_mode_title">Modo adaptativo</string>
-    <string name="oneplus_mode_title">Modo OnePlus</string>
-    <string name="dci_mode_summary"></string>
-    <string name="dci_mode_title">Modo de amplia gama de colores DCI-P3</string>
-    <string name="Night_mode_summary"></string>
-    <string name="Night_mode_title">Modo nocturno</string>
-    <string name="panel_category_title">Modos de panel</string>
-    <string name="panel_category_summary">Modos para el panel de corrección de color</string>
-    <string name="off_mode_title">Apagado</string>
-    <string name="tile_panel_mode">Modos de panel</string>
     <!-- Notification slider -->
     <string name="alert_slider_category_title">Control deslizante de notificaciones</string>
     <string name="alert_slider_selection_dialog_title">Acción</string>

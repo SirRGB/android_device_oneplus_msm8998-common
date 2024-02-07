@@ -26,8 +26,6 @@ import android.provider.Settings;
 import android.text.TextUtils;
 import androidx.preference.PreferenceManager;
 
-import com.lineageos.device.DeviceSettings.ModeSwitch.*;
-
 public class Startup extends BroadcastReceiver {
 
     private static final String TAG = "BootReceiver";
@@ -37,16 +35,6 @@ public class Startup extends BroadcastReceiver {
     public void onReceive(final Context context, final Intent bootintent) {
         boolean enabled = false;
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
-        enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_SRGB_SWITCH, false);
-        restore(SRGBModeSwitch.getFile(), enabled);
-        enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_DCI_SWITCH, false);
-        restore(DCIModeSwitch.getFile(), enabled);
-        enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_NIGHT_SWITCH, false);
-        restore(NightModeSwitch.getFile(), enabled);
-        enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_ADAPTIVE_SWITCH, false);
-        restore(AdaptiveModeSwitch.getFile(), enabled);
-        enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_ONEPLUS_SWITCH, false);
-        restore(OnePlusModeSwitch.getFile(), enabled);
         enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_FPS_INFO, false);
         if (enabled) {
             context.startService(new Intent(context, FPSInfoService.class));
