@@ -19,8 +19,6 @@
     <string name="display_summary">Dostosuj ustawienia i preferencje wyświetlania</string>
     <string name="srgb_mode_summary"></string>
     <string name="srgb_mode_title">Tryb sRGB</string>
-    <string name="hbm_mode_summary"></string>
-    <string name="hbm_mode_title">Tryb wysokiej jasności</string>
     <string name="adaptive_mode_title">Tryb adaptacyjny</string>
     <string name="oneplus_mode_title">Tryb OnePlus</string>
     <string name="dci_mode_summary"></string>
@@ -31,7 +29,6 @@
     <string name="panel_category_summary">Tryby wyświetlania z korekcją kolorów</string>
     <string name="off_mode_title">Wyłącz</string>
     <string name="tile_panel_mode">Tryby panelu</string>
-    <string name="tile_hbm_mode">Tryb wysokiej jasności</string>
     <!-- Notification slider -->
     <string name="alert_slider_category_title">Suwak powiadomień</string>
     <string name="alert_slider_selection_dialog_title">Akcja</string>

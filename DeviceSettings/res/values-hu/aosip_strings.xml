@@ -19,8 +19,6 @@
     <string name="display_summary">Beállítások finomhangolása a kijelző igényei szerint</string>
     <string name="srgb_mode_summary"></string>
     <string name="srgb_mode_title">sRGB mód</string>
-    <string name="hbm_mode_summary"></string>
-    <string name="hbm_mode_title">Magas fényerejű mód</string>
     <string name="adaptive_mode_title">Adaptív mód</string>
     <string name="oneplus_mode_title">OnePlus mód</string>
     <string name="dci_mode_summary"></string>
@@ -31,7 +29,6 @@
     <string name="panel_category_summary">A panelszín-korrekció módjai</string>
     <string name="off_mode_title">Ki</string>
     <string name="tile_panel_mode">Panelmódok</string>
-    <string name="tile_hbm_mode">Magas fényerejű módok</string>
     <!-- Notification slider -->
     <string name="alert_slider_category_title">Értesítési csúszka</string>
     <string name="alert_slider_selection_dialog_title">Művelet</string>

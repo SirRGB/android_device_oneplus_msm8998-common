@@ -19,8 +19,6 @@
     <string name="display_summary">Ajustar la configuración y preferencias para la pantalla</string>
     <string name="srgb_mode_summary"></string>
     <string name="srgb_mode_title">modo sRGB</string>
-    <string name="hbm_mode_summary"></string>
-    <string name="hbm_mode_title">Modo de alto brillo</string>
     <string name="adaptive_mode_title">Modo adaptativo</string>
     <string name="oneplus_mode_title">Modo OnePlus</string>
     <string name="dci_mode_summary"></string>
@@ -31,7 +29,6 @@
     <string name="panel_category_summary">Modos para el panel de corrección de color</string>
     <string name="off_mode_title">Apagado</string>
     <string name="tile_panel_mode">Modos de panel</string>
-    <string name="tile_hbm_mode">Modos de alto brillo</string>
     <!-- Notification slider -->
     <string name="alert_slider_category_title">Control deslizante de notificaciones</string>
     <string name="alert_slider_selection_dialog_title">Acción</string>

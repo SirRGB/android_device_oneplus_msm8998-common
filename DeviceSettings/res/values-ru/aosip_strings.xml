@@ -19,8 +19,6 @@
     <string name="display_summary">Настройки и параметры экрана</string>
     <string name="srgb_mode_summary"></string>
     <string name="srgb_mode_title">Режим sRGB</string>
-    <string name="hbm_mode_summary"></string>
-    <string name="hbm_mode_title">Режим высокой яркости</string>
     <string name="adaptive_mode_title">Адаптивный режим</string>
     <string name="oneplus_mode_title">Режим OnePlus</string>
     <string name="dci_mode_summary"></string>
@@ -31,7 +29,6 @@
     <string name="panel_category_summary">Режимы для цветовой коррекции панелей</string>
     <string name="off_mode_title">Выкл</string>
     <string name="tile_panel_mode">Режим панелей</string>
-    <string name="tile_hbm_mode">Режимы высокой яркости</string>
     <!-- Notification slider -->
     <string name="alert_slider_category_title">Слайдер уведомлений</string>
     <string name="alert_slider_selection_dialog_title">Действие</string>

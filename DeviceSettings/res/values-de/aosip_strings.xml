@@ -19,8 +19,6 @@
     <string name="display_summary">Einstellungen und Präferenzen für das Display anpassen</string>
     <string name="srgb_mode_summary"></string>
     <string name="srgb_mode_title">sRGB-Modus</string>
-    <string name="hbm_mode_summary"></string>
-    <string name="hbm_mode_title">Modus für hohe Helligkeit</string>
     <string name="adaptive_mode_title">Angepasster Modus</string>
     <string name="oneplus_mode_title">OnePlus Modus</string>
     <string name="dci_mode_summary"></string>
@@ -31,7 +29,6 @@
     <string name="panel_category_summary">Modi für die Panel-Farbkorrektur</string>
     <string name="off_mode_title">Aus</string>
     <string name="tile_panel_mode">Panelmodus</string>
-    <string name="tile_hbm_mode">Modus für hohe Helligkeit</string>
     <!-- Notification slider -->
     <string name="alert_slider_category_title">Benachrichtigungs-Slider</string>
     <string name="alert_slider_selection_dialog_title">Aktion</string>

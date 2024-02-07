@@ -19,8 +19,6 @@
     <string name="display_summary">调整屏幕的设置和偏好</string>
     <string name="srgb_mode_summary"></string>
     <string name="srgb_mode_title">sRGB 模式</string>
-    <string name="hbm_mode_summary"></string>
-    <string name="hbm_mode_title">高亮度模式</string>
     <string name="adaptive_mode_title">自适应模式</string>
     <string name="oneplus_mode_title">一加模式</string>
     <string name="dci_mode_summary"></string>
@@ -31,7 +29,6 @@
     <string name="panel_category_summary">面板颜色校正模式</string>
     <string name="off_mode_title">关闭</string>
     <string name="tile_panel_mode">面板模式</string>
-    <string name="tile_hbm_mode">高亮度模式</string>
     <!-- Notification slider -->
     <string name="alert_slider_category_title">通知滑块</string>
     <string name="alert_slider_selection_dialog_title">操作</string>

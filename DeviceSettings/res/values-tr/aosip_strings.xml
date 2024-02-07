@@ -19,8 +19,6 @@
     <string name="display_summary">Görüntü için ayarları ve tercihleri ayarlayın</string>
     <string name="srgb_mode_summary"></string>
     <string name="srgb_mode_title">sRGB modu</string>
-    <string name="hbm_mode_summary"></string>
-    <string name="hbm_mode_title">Yüksek parlaklık modu</string>
     <string name="adaptive_mode_title">Uyarlanabilir mod</string>
     <string name="oneplus_mode_title">OnePlus modu</string>
     <string name="dci_mode_summary"></string>
@@ -31,7 +29,6 @@
     <string name="panel_category_summary">Panel renk düzeltmesi için modlar</string>
     <string name="off_mode_title">Kapalı</string>
     <string name="tile_panel_mode">Panel modları</string>
-    <string name="tile_hbm_mode">Yüksek parlaklık modları</string>
 
     <!-- Notification slider -->
     <string name="alert_slider_category_title">Bildirim kaydırıcı</string>

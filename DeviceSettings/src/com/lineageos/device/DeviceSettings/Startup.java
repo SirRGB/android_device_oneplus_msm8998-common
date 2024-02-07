@@ -39,8 +39,6 @@ public class Startup extends BroadcastReceiver {
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
         enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_SRGB_SWITCH, false);
         restore(SRGBModeSwitch.getFile(), enabled);
-        enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_HBM_SWITCH, false);
-        restore(HBMModeSwitch.getFile(), enabled);
         enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_DCI_SWITCH, false);
         restore(DCIModeSwitch.getFile(), enabled);
         enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_NIGHT_SWITCH, false);
@@ -59,12 +57,6 @@ public class Startup extends BroadcastReceiver {
 
         enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_BUTTON_SWAP, false);
         restore(ButtonSwap.getFile(), enabled);
-
-        if (Build.DEVICE.equals("OnePlus5")) {
-            restore("/proc/flicker_free/min_brightness", "66");
-        } else if (Build.DEVICE.equals("OnePlus5T")) {
-            restore("/proc/flicker_free/min_brightness", "302");
-        }
     }
 
     private void restore(String file, boolean enabled) {
