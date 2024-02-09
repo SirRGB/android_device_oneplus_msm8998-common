@@ -187,7 +187,6 @@ on late-fs
     start surfaceflinger
     start bootanim
     start vendor.qti.hardware.display.composer
-    start vendor.configstore-hal
     start vendor.qti.hardware.display.allocator
 
     # Mount RW partitions which need to run fsck
