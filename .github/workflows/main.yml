@@ -23,7 +23,7 @@ jobs:
         git rebase FETCH_HEAD
         git push -f
         git checkout crdroid-13
-        git rebase FETCH_HEAD
+        git rebase lineage-20
         git push -f
       env:
         GITHUB_EMAIL: ${{ secrets.EMAIL }}
