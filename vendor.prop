@@ -143,6 +143,9 @@ persist.vendor.sensors.direct_channel=true
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=MSM8998
 
+# SurfaceFlinger
+debug.sf.layer_caching_active_layer_timeout_ms=1000
+
 # Timeservice
 persist.vendor.delta_time.enable=true
 
