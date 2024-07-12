@@ -408,7 +408,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/lineage/interfaces/power-libperfmgr \
-    hardware/oneplus \
+    hardware/oplus \
     hardware/qcom-caf/common/libqti-perfd-client
 
 QCOM_SOONG_NAMESPACE := $(LOCAL_PATH)/qcom-caf
