@@ -11,6 +11,3 @@ allow system_app sysfs_vibrator:dir search;
 allow system_app sysfs_vibrator:file rw_file_perms;
 
 allow system_app sysfs_battery_supply:file { open getattr write read };
-
-allow system_app sysfs_audiogain:dir { search };
-allow system_app sysfs_audiogain:file { rw_file_perms };
