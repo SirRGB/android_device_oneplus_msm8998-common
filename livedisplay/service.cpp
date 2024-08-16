@@ -34,7 +34,7 @@ using ::vendor::lineage::livedisplay::V2_0::sdm::SDMController;
 int main() {
     std::shared_ptr<SDMController> controller = std::make_shared<SDMController>();
     android::sp<AdaptiveBacklight> abService = new AdaptiveBacklight();
-    android::sp<IDisplayModes> modesService = new DisplayModes();
+    android::sp<IDisplayModes> modesService = new DisplayModes(controller);
     android::sp<IPictureAdjustment> paService = new PictureAdjustment(controller);
 
     LOG(DEBUG) << "LiveDisplay HAL service is starting.";

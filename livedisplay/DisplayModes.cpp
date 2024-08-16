@@ -17,6 +17,7 @@
 #define LOG_TAG "DisplayModesService"
 
 #include <android-base/logging.h>
+#include <android-base/properties.h>
 #include <fstream>
 
 #include "DisplayModes.h"
@@ -38,8 +39,8 @@ const std::map<int32_t, DisplayModes::ModeInfo> DisplayModes::kModeMap = {
     {4, {"sRGB", "srgb"}},
 };
 
-DisplayModes::DisplayModes()
-    : mCurrentModeId(0), mDefaultModeId(0) {
+DisplayModes::DisplayModes(std::shared_ptr<V2_0::sdm::SDMController> controller)
+    : mController(std::move(controller)), mCurrentModeId(0), mDefaultModeId(0) {
     std::ifstream defaultFile(kDefaultPath);
 
     defaultFile >> mDefaultModeId;
@@ -48,7 +49,7 @@ DisplayModes::DisplayModes()
     setDisplayMode(mDefaultModeId, false);
 }
 
-// Methods from ::vendor::lineage::livedisplay::V2_0::IDisplayModes follow.
+// Methods from ::vendor::lineage::livedisplay::V2_1::IDisplayModes follow.
 Return<void> DisplayModes::getDisplayModes(getDisplayModes_cb resultCb) {
     std::vector<V2_0::DisplayMode> modes;
 
@@ -89,11 +90,13 @@ Return<bool> DisplayModes::setDisplayMode(int32_t modeID, bool makeDefault) {
     if (file.fail()) {
         LOG(ERROR) << "Failed to write to " << (kModeBasePath +  iter->second.node);
     }
+    mController->setActiveDisplayMode(iter->first);
     mCurrentModeId = iter->first;
     if (makeDefault) {
         std::ofstream defaultFile(kDefaultPath);
         defaultFile << iter->first;
         if (!defaultFile.fail()) {
+            mController->setDefaultDisplayMode(iter->first);
             mDefaultModeId = iter->first;
         }
     }
