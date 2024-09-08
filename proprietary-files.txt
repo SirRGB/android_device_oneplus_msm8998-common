@@ -570,10 +570,8 @@ vendor/lib/libmulawdec.so
 vendor/lib/libsmwrapper.so
 
 # Media
-vendor/lib/libOmxVpp.so
 vendor/lib/libvpphvx.so
 vendor/lib/libvpplibrary.so
-vendor/lib64/libOmxVpp.so
 vendor/lib64/libvpphvx.so
 vendor/lib64/libvpplibrary.so
 
