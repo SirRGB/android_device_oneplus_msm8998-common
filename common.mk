@@ -494,7 +494,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_ui_3d_tonemap=1
 
 # OSS Time service
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     timekeep \
     TimeKeep
 
