@@ -77,7 +77,6 @@ vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/libbluetooth_audio_session_qti_2_1.so
 vendor/lib64/libbt-hidlclient.so
@@ -94,15 +93,15 @@ vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 
 # Camera
 vendor/lib/libDeVIS.so
-vendor/lib/libEIS.so
-vendor/lib/libOGLManager.so
-vendor/lib/libSonyIMX371RmscLibrary.so
+vendor/lib/libEIS.so|b7ea39e074d6cd0f254f1616425fa6d44fd9de5f
+vendor/lib/libOGLManager.so;DISABLE_CHECKELF
+vendor/lib/libSonyIMX371RmscLibrary.so|be6590139dcac656b6ac85e159720f3c9b6dec60
 vendor/lib/libVDBlurlessAPI_v2.so
 vendor/lib/libVDDualCameraBlurlessAPI.so
 vendor/lib/libVDHDRAPI.so
 vendor/lib/libVDSuperPhotoAPI.so
 vendor/lib/libarcsoft_dualcam_bokeh_api.so
-vendor/lib/libarcsoft_hdr_denoise_api.so
+vendor/lib/libarcsoft_hdr_denoise_api.so;DISABLE_CHECKELF|10eaf93190ba0cb71be2640417198e198a350f5d
 vendor/lib/libcamera_oneplus_bokeh_wrapper.so
 vendor/lib/libcvface_api.so
 vendor/lib/libflash_pmic.so
@@ -126,7 +125,7 @@ vendor/lib/libmmcamera_dummyalgo.so
 vendor/lib/libmmcamera_eeprom_util.so
 vendor/lib/libmmcamera_eztune_module.so
 vendor/lib/libmmcamera_facedetection_lib.so
-vendor/lib/libmmcamera_faceproc.so
+vendor/lib/libmmcamera_faceproc.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmmcamera_hdr_gb_lib.so
 vendor/lib/libmmcamera_imglib.so
@@ -159,15 +158,15 @@ vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libseemore.so
 vendor/lib/libstblur_capture_api.so
 vendor/lib64/libDeVIS.so
-vendor/lib64/libEIS.so
-vendor/lib64/libOGLManager.so
+vendor/lib64/libEIS.so|25933f5d070f824caecf9892878fb495be38116d
+vendor/lib64/libOGLManager.so;DISABLE_CHECKELF
 vendor/lib64/libmmcamera2_frame_algorithm.so
 vendor/lib64/libmmcamera2_is.so
 vendor/lib64/libmmcamera2_q3a_core.so
 vendor/lib64/libmmcamera2_stats_algorithm.so
 vendor/lib64/libmmcamera2_stats_lib.so
 vendor/lib64/libmmcamera_dbg.so
-vendor/lib64/libmmcamera_faceproc.so
+vendor/lib64/libmmcamera_faceproc.so;DISABLE_CHECKELF
 vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libseemore.so
@@ -256,8 +255,8 @@ vendor/etc/GyroOffset_db.config
 vendor/etc/fsync_db.config
 vendor/lib/lib_oneplus_facebeauty.so
 vendor/lib/lib_oneplus_watermark.so
-vendor/lib/libmms_gyro_vstab.so
-vendor/lib/libmms_gyro_vstab_auth.so
+vendor/lib/libmms_gyro_vstab.so|bf661ef6e53ed42d7357c97052885d95175404a6
+vendor/lib/libmms_gyro_vstab_auth.so|e04584734220c82e043461fa18f400aa7aaaf1a6
 vendor/lib/libopcamera_native_modules.so
 
 # Camera sensors
@@ -340,12 +339,12 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile4.xml|ff91feb5060a6df07e3e4d9bc99ae58bcc
 vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml|f76c894f3c6d5b6ed35113a088dc3174c900501b
 vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml|14d136e7fcc682311757d3edc0b9d3eaeba11815
 vendor/etc/init/cnd.rc|3a5183df3479500fb729493bc56c71166fc10bce
-vendor/lib64/libcne.so|f7565b0b97975e7021bd007b8387ccc839a8dad9
+vendor/lib64/libcne.so;DISABLE_CHECKELF|f7565b0b97975e7021bd007b8387ccc839a8dad9
 vendor/lib64/libcneapiclient.so|b6479678e5b0e8b46d8df5eb8bd610aa17be00d0
 vendor/lib64/libcneoplookup.so|3ce1039ad657d889f90140cb630eb487d2e711df
 vendor/lib64/libcneqmiutils.so|582c925ce11d12bd2dd15a5927623835bce06a01
 vendor/lib64/libwms.so|1b91f43e9e9a8f143cddd1d945c63d384c65541c
-vendor/lib64/libwqe.so|5561170b3ee4d9233a0e4f384be08e2e1d01f0f5
+vendor/lib64/libwqe.so;DISABLE_CHECKELF|5561170b3ee4d9233a0e4f384be08e2e1d01f0f5
 vendor/lib64/libxml.so|f9b20632e9fd324810caf865faea93e4ff505d91
 vendor/lib64/vendor.qti.data.factory@2.0.so|748bfbaa57a409b8962e2b1725e1415e423a7315
 vendor/lib64/vendor.qti.data.factory@2.1.so|bb1f3fa22563282ee24bf03ca681fdc45551feef
@@ -387,7 +386,7 @@ system_ext/lib64/libdpmtcm.so|dff3d3dbacd18ed55b5758a174f5016ef9e7a896
 system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|10828ba0d987fa884ad0b4a87a46bf9f505535ea
 vendor/bin/dpmQmiMgr|61a421804559b0e461439c19088acc01b871982a
 vendor/etc/init/dpmQmiMgr.rc|1538743661a5c48c15cd105beaad20f72953885a
-vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|d9f1aa7f93b928f42499d613d20ccbc60f279097
+vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE_SUFFIX=_vendor|d9f1aa7f93b928f42499d613d20ccbc60f279097
 vendor/lib64/libdpmqmihal.so|41eb89e66ba065c43a5eb79cd3c72cef0ee167aa
 
 # DRM
@@ -421,7 +420,6 @@ vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 # DRM (Widevine)
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
-vendor/lib/libcppf.so
 vendor/lib64/libhdcpsrm.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libwvhidl.so
@@ -448,7 +446,7 @@ vendor/lib64/hw/gatekeeper.msm8998.so
 # GPS
 vendor/bin/hw/android.hardware.gnss@2.0-service-qti
 vendor/bin/loc_launcher
-vendor/bin/lowi-server
+vendor/bin/lowi-server;DISABLE_CHECKELF
 vendor/bin/mlid
 vendor/bin/slim_daemon
 vendor/bin/xtra-daemon
@@ -530,18 +528,15 @@ vendor/firmware/a540_zap.elf
 vendor/firmware/a540_zap.mdt
 
 # Graphics - HDR
-vendor/lib/libhdr_tm.so
 vendor/lib64/libhdr_tm.so
 
 # Graphics - SDM
-vendor/lib/libsdedrm.so
--vendor/lib/libsdm-disp-vndapis.so
+-vendor/lib/libsdm-disp-vndapis.so;DISABLE_CHECKELF
 vendor/lib64/libqseed3.so
-vendor/lib64/libsdedrm.so
-vendor/lib64/libsdm-color.so
-vendor/lib64/libsdm-diag.so
--vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmextension.so
+vendor/lib64/libsdm-color.so;DISABLE_CHECKELF
+vendor/lib64/libsdm-diag.so;DISABLE_CHECKELF
+-vendor/lib64/libsdm-disp-vndapis.so;DISABLE_CHECKELF
+vendor/lib64/libsdmextension.so;DISABLE_CHECKELF
 vendor/lib64/libtinyxml2_1.so
 
 # IPA
@@ -571,10 +566,8 @@ vendor/lib/libsmwrapper.so
 
 # Media
 vendor/lib/libOmxVpp.so
-vendor/lib/libgpustats.so
 vendor/lib/libvqzip.so
 vendor/lib64/libOmxVpp.so
-vendor/lib64/libgpustats.so
 
 # NFC
 vendor/lib/libpn553_fw.so:vendor/lib64/libpn553_fw.so
@@ -612,7 +605,6 @@ vendor/bin/irsc_util|e590882aefe9da28c1d57e9bf46962198f1dabcd
 vendor/lib/libdiag.so|0a9a6aa74b1728bfb9c6b3ccd7cf0a5bdbc29434
 vendor/lib/libdsutils.so|60135d6d64ecba72fa0eb637a434578290beaaff
 vendor/lib/libidl.so|dc8d161c035f70e7e6c55461b0238fbe916c5a7d
-vendor/lib/libqcci_legacy.so|fa7f0fe72c0246633d842891bb0187867930f63b
 vendor/lib/libqdi.so|6fbd9d89b27a7f54925a6a174b75dfaab450c59b
 vendor/lib/libqdp.so|9d9058f4761990d09acd5610e281a5cee4bd5e95
 vendor/lib/libqmi.so|08e30ffe119992357de2e8f02b2cd3ea1fed6a50
@@ -626,7 +618,6 @@ vendor/lib/libqmiservices.so|52244e9d54c4d352d148d276044a4b7cc4c78bf4
 vendor/lib64/libdiag.so|174ff3f940288d2d1503230465dfe917ab9d155b
 vendor/lib64/libdsutils.so|0b466344eb6628feb1b5aba00d1ef3f680e5aa9a
 vendor/lib64/libidl.so|79ebe1a5b1fb81d9cdc972c71cec2667cdcf6599
-vendor/lib64/libqcci_legacy.so|d4643c6a585a62d9249acc841a4137c097299e4c
 vendor/lib64/libqcrildatactl.so|b3dccb609cfdc64b7bc74d9d3204904d8972df4d
 vendor/lib64/libqdi.so|c9e0b315edfb6a8f6e6afb5370e9dff5e934c78c
 vendor/lib64/libqdp.so|f83527aa6b6aa45c6495056dc830affbe889fb18
@@ -719,8 +710,8 @@ vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql|a0603a5c46e8e
 vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql|4701219a79190995eda651e5c45e11c9b111a478
 
 # Radio - IMS - from FP3 - 6.A.025.0
-system_ext/lib64/lib-imscamera.so|8170256dbf9120ff05f193ba937c718d9c580881
-system_ext/lib64/lib-imsvideocodec.so|3e364441c9dce63d74fbc78c4781a84080513d8a|e09b2bba52d2de6975772228745203d8691e06b8
+system_ext/lib64/lib-imscamera.so|aca01f3ae40a15872c879e03bb4a06c7380d8604
+system_ext/lib64/lib-imsvideocodec.so|3e364441c9dce63d74fbc78c4781a84080513d8a
 system_ext/lib64/lib-imsvt.so|4f96cc5f27551d0b6cb11ad6447d9ce8829dde47
 system_ext/lib64/lib-imsvtextutils.so|1acf1de305e455a3a924483e5652b37133d10fd1
 system_ext/lib64/lib-imsvtutils.so|dfc5cf0854fe38c191a53ec3bd2a322d05d85567
@@ -729,7 +720,7 @@ system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/li
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|4cf9e97f526c6278c5e2136e00d1fb800fb941aa
 system_ext/priv-app/ims/ims.apk|16b82e1e0113beb7fb3a62a9a5513b317675d96e
 vendor/bin/ims_rtp_daemon|32a3ce381b0f85f53a2e9afd7215b3585afef0d6
-vendor/bin/imsdatadaemon|3f044f84eb4049f1ce8a26af6a6026c1776d22dd
+vendor/bin/imsdatadaemon;DISABLE_CHECKELF|3f044f84eb4049f1ce8a26af6a6026c1776d22dd
 vendor/bin/imsqmidaemon|756dcc2d6c7fa26916bc28dedf0c513b1d5e5bfe
 vendor/bin/imsrcsd|bf29aac14856f29268c01599e5f6c7c6ae520685
 vendor/etc/init/ims_rtp_daemon_legacy.rc|104b2a879db4d3dd44e74a3d7f6e69f6972c9129
@@ -748,7 +739,7 @@ vendor/lib64/lib-imsSDP.so|4d19d270ea4ecde57d3fe2c5435379558ca94a52
 vendor/lib64/lib-imscmservice.so|1256a36db63ed10e3f7f6c659d5086bf1ed8752f
 vendor/lib64/lib-imsdpl.so|18c2071b74fc8dfefeabf0c2e075720ebaa81ab2
 vendor/lib64/lib-imsqimf.so|d0813dc6a1360c31bc2736b6d59d2fa3a0c614f8
-vendor/lib64/lib-imsrcs-v2.so|3937e675ce460f3950e04aef67b1d17e7fd227a5
+vendor/lib64/lib-imsrcs-v2.so;DISABLE_CHECKELF|8cc487f3cbca01dfd7f761bb4fecb681d4d941f4
 vendor/lib64/lib-imsrcsbaseimpl.so|8b765d37ac42cb813cf28995fb1359f42f26912f
 vendor/lib64/lib-imsvtcore.so|c3354efe3909f2971a0a4f847c4dddca02bdb81b
 vendor/lib64/lib-imsxml.so|25d01eaf4d9a1a0d5002e8ad27500d19b9adbbe5
@@ -775,7 +766,8 @@ vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so|b2faf304adadcdd84b0dafeda6d4d568215
 vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so|aa98e9afc4cac9fa5be51bbba359a74973f9cf27
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so|62cd64dbb25d082cfdc742fb03931ba0f9abe434
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|fa120eaa7807ff43f3974a8e0146a8c00c78f623
-vendor/lib64/vendor.qti.imsrtpservice@3.0.so|460e589128fce0b0e83bb3c75aa32f7e1a9494fd
+vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE_SUFFIX=_vendor|460e589128fce0b0e83bb3c75aa32f7e1a9494fd
+vendor/lib64/lib-rcsconfig.so|a14fa3ef1f1542d64782552ca65e6bf2a26f7070
 
 # Radio - MBN
 etc/firmware/mbn_ota/mbn_ota.txt:vendor/firmware/mbn_ota/mbn_ota.txt
