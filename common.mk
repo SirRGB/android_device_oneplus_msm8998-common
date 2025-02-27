@@ -11,6 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
 $(call inherit-product, vendor/oneplus/msm8998-common/msm8998-common-vendor.mk)
 
+PRODUCT_ENABLE_UFFD_GC := true
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := true
 
 # Overlays
@@ -364,9 +365,6 @@ $(call soong_config_set,ONEPLUS_LINEAGE_TOUCH_HAL,INCLUDE_DIR,$(LOCAL_PATH)/touc
 # Tri-state-key
 PRODUCT_PACKAGES += \
     KeyHandler
-
-# UFFD GC
-OVERRIDE_ENABLE_UFFD_GC := false
 
 # USB
 PRODUCT_PACKAGES += \
