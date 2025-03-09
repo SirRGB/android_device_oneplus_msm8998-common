@@ -12,6 +12,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     RisingChipset="Qualcomm MSM8998" \
     RisingMaintainer="SirRGB"
 
+ifneq ($(WITH_GMS),true)
+PRODUCT_PACKAGES += \
+  Jelly
+endif
+
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
