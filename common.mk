@@ -6,6 +6,7 @@
 
 # Rising
 TARGET_ENABLE_BLUR := true
+TARGET_PREBUILT_BCR := false
 RISING_MAINTAINER := SirRGB
 PRODUCT_BUILD_PROP_OVERRIDES += \
     RisingChipset="Qualcomm MSM8998" \
