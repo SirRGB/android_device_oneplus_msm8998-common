@@ -94,7 +94,7 @@ vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 # Camera
 vendor/lib/libDeVIS.so
 vendor/lib/libEIS.so|b7ea39e074d6cd0f254f1616425fa6d44fd9de5f
-vendor/lib/libOGLManager.so;DISABLE_CHECKELF
+vendor/lib/libOGLManager.so
 vendor/lib/libSonyIMX371RmscLibrary.so|be6590139dcac656b6ac85e159720f3c9b6dec60
 vendor/lib/libVDBlurlessAPI_v2.so
 vendor/lib/libVDDualCameraBlurlessAPI.so
@@ -159,7 +159,7 @@ vendor/lib/libseemore.so
 vendor/lib/libstblur_capture_api.so
 vendor/lib64/libDeVIS.so
 vendor/lib64/libEIS.so|25933f5d070f824caecf9892878fb495be38116d
-vendor/lib64/libOGLManager.so;DISABLE_CHECKELF
+vendor/lib64/libOGLManager.so
 vendor/lib64/libmmcamera2_frame_algorithm.so
 vendor/lib64/libmmcamera2_is.so
 vendor/lib64/libmmcamera2_q3a_core.so
