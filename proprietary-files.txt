@@ -566,8 +566,12 @@ vendor/lib/libsmwrapper.so
 
 # Media
 vendor/lib/libOmxVpp.so
+vendor/lib/libvpphvx.so
+vendor/lib/libvpplibrary.so
 vendor/lib/libvqzip.so
 vendor/lib64/libOmxVpp.so
+vendor/lib64/libvpphvx.so
+vendor/lib64/libvpplibrary.so
 
 # NFC
 vendor/lib/libpn553_fw.so:vendor/lib64/libpn553_fw.so
