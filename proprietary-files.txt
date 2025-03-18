@@ -102,7 +102,7 @@ vendor/lib/libVDDualCameraBlurlessAPI.so
 vendor/lib/libVDHDRAPI.so
 vendor/lib/libVDSuperPhotoAPI.so
 vendor/lib/libarcsoft_dualcam_bokeh_api.so
-vendor/lib/libarcsoft_hdr_denoise_api.so
+vendor/lib/libarcsoft_hdr_denoise_api.so;DISABLE_CHECKELF
 vendor/lib/libcamera_oneplus_bokeh_wrapper.so
 vendor/lib/libcvface_api.so
 vendor/lib/libflash_pmic.so
@@ -114,10 +114,10 @@ vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_frame_algorithm.so
 vendor/lib/libmmcamera2_is.so
-vendor/lib/libmmcamera2_isp_modules.so
-vendor/lib/libmmcamera2_mct_shimlayer.so
-vendor/lib/libmmcamera2_pp_buf_mgr.so
-vendor/lib/libmmcamera2_pproc_modules.so
+vendor/lib/libmmcamera2_isp_modules.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera2_mct_shimlayer.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera2_pp_buf_mgr.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera2_pproc_modules.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera2_q3a_core.so
 vendor/lib/libmmcamera2_stats_algorithm.so
 vendor/lib/libmmcamera2_stats_lib.so
@@ -138,13 +138,13 @@ vendor/lib/libmmcamera_interface.so
 vendor/lib/libmmcamera_paaf_lib.so
 vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_pdafcamif.so
-vendor/lib/libmmcamera_ppbase_module.so
+vendor/lib/libmmcamera_ppbase_module.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera_quadracfa.so
 vendor/lib/libmmcamera_stillmore_lib.so
 vendor/lib/libmmcamera_sw2d_lib.so
 vendor/lib/libmmcamera_thread_services.so
 vendor/lib/libmmcamera_tintless_algo.so
-vendor/lib/libmmcamera_tuning.so
+vendor/lib/libmmcamera_tuning.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera_tuning_lookup.so
 vendor/lib/libmmjpeg.so
 vendor/lib/libmmjpeg_interface.so
@@ -421,7 +421,7 @@ vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 # DRM (Widevine)
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
-vendor/lib/libcppf.so
+vendor/lib/libcppf.so;DISABLE_CHECKELF
 vendor/lib64/libhdcpsrm.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libwvhidl.so
@@ -530,7 +530,6 @@ vendor/firmware/a540_zap.elf
 vendor/firmware/a540_zap.mdt
 
 # Graphics - HDR
-vendor/lib/libhdr_tm.so
 vendor/lib64/libhdr_tm.so
 
 # Graphics - SDM
@@ -538,11 +537,11 @@ vendor/lib/libsdedrm.so
 vendor/lib/libsdm-disp-vndapis.so
 vendor/lib64/libqseed3.so
 vendor/lib64/libsdedrm.so
-vendor/lib64/libsdm-color.so
+vendor/lib64/libsdm-color.so;DISABLE_CHECKELF
 vendor/lib64/libsdm-diag.so
 vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmextension.so
-vendor/lib64/libtinyxml2_1.so
+vendor/lib64/libtinyxml2_1.so;DISABLE_CHECKELF
 
 # IPA
 vendor/firmware/ipa_fws.b00
@@ -569,11 +568,11 @@ vendor/lib/libmulawdec.so
 vendor/lib/libsmwrapper.so
 
 # Media
-vendor/lib/libOmxVpp.so
-vendor/lib/libgpustats.so
+vendor/lib/libOmxVpp.so;DISABLE_CHECKELF
+vendor/lib/libgpustats.so;DISABLE_CHECKELF
 vendor/lib/libvqzip.so
-vendor/lib64/libOmxVpp.so
-vendor/lib64/libgpustats.so
+vendor/lib64/libOmxVpp.so;DISABLE_CHECKELF
+vendor/lib64/libgpustats.so;DISABLE_CHECKELF
 
 # NFC
 vendor/lib/libpn553_fw.so:vendor/lib64/libpn553_fw.so
@@ -609,7 +608,7 @@ vendor/bin/irsc_util|e590882aefe9da28c1d57e9bf46962198f1dabcd
 vendor/lib/libdiag.so|0a9a6aa74b1728bfb9c6b3ccd7cf0a5bdbc29434
 vendor/lib/libdsutils.so|60135d6d64ecba72fa0eb637a434578290beaaff
 vendor/lib/libidl.so|dc8d161c035f70e7e6c55461b0238fbe916c5a7d
-vendor/lib/libqcci_legacy.so|fa7f0fe72c0246633d842891bb0187867930f63b
+vendor/lib/libqcci_legacy.so;DISABLE_CHECKELF|fa7f0fe72c0246633d842891bb0187867930f63b
 vendor/lib/libqdi.so|6fbd9d89b27a7f54925a6a174b75dfaab450c59b
 vendor/lib/libqdp.so|9d9058f4761990d09acd5610e281a5cee4bd5e95
 vendor/lib/libqmi.so|08e30ffe119992357de2e8f02b2cd3ea1fed6a50
@@ -623,7 +622,7 @@ vendor/lib/libqmiservices.so|52244e9d54c4d352d148d276044a4b7cc4c78bf4
 vendor/lib64/libdiag.so|174ff3f940288d2d1503230465dfe917ab9d155b
 vendor/lib64/libdsutils.so|0b466344eb6628feb1b5aba00d1ef3f680e5aa9a
 vendor/lib64/libidl.so|79ebe1a5b1fb81d9cdc972c71cec2667cdcf6599
-vendor/lib64/libqcci_legacy.so|d4643c6a585a62d9249acc841a4137c097299e4c
+vendor/lib64/libqcci_legacy.so;DISABLE_CHECKELF|d4643c6a585a62d9249acc841a4137c097299e4c
 vendor/lib64/libqcrildatactl.so|b3dccb609cfdc64b7bc74d9d3204904d8972df4d
 vendor/lib64/libqdi.so|c9e0b315edfb6a8f6e6afb5370e9dff5e934c78c
 vendor/lib64/libqdp.so|f83527aa6b6aa45c6495056dc830affbe889fb18
@@ -745,7 +744,7 @@ vendor/lib64/lib-imsSDP.so|4d19d270ea4ecde57d3fe2c5435379558ca94a52
 vendor/lib64/lib-imscmservice.so|1256a36db63ed10e3f7f6c659d5086bf1ed8752f
 vendor/lib64/lib-imsdpl.so|18c2071b74fc8dfefeabf0c2e075720ebaa81ab2
 vendor/lib64/lib-imsqimf.so|d0813dc6a1360c31bc2736b6d59d2fa3a0c614f8
-vendor/lib64/lib-imsrcs-v2.so|3937e675ce460f3950e04aef67b1d17e7fd227a5
+vendor/lib64/lib-imsrcs-v2.so;DISABLE_CHECKELF|3937e675ce460f3950e04aef67b1d17e7fd227a5
 vendor/lib64/lib-imsrcsbaseimpl.so|8b765d37ac42cb813cf28995fb1359f42f26912f
 vendor/lib64/lib-imsvtcore.so|c3354efe3909f2971a0a4f847c4dddca02bdb81b
 vendor/lib64/lib-imsxml.so|25d01eaf4d9a1a0d5002e8ad27500d19b9adbbe5

@@ -36,6 +36,18 @@ lib_fixups: lib_fixups_user_type = {
         'vendor.qti.imsrtpservice@3.0',
     ): lib_fixup_vendor_suffix,
     (
+        'libarcsoft_smart_denoise',
+        'libarcsoft_high_dynamic_range',
+        'libQSEEComAPI',
+        'libCB',
+        'libvpplibrary',
+        'libmmcamera2_mct',
+        'libqmi_legacy',
+        'libmmcamera2_imglib_modules',
+        'libmmcamera2_stats_modules',
+        'libmmcamera2_iface_modules',
+        'libmmcamera2_sensor_modules',
+        'lib-rcsconfig',
     ): lib_fixup_remove,
 }
 
