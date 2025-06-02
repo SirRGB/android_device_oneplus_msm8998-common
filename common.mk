@@ -433,7 +433,6 @@ PRODUCT_PACKAGES += \
 
 # OSS Time service
 PRODUCT_PACKAGES += \
-    timekeep \
     TimeKeep
 
 # RmNet xml config file
