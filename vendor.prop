@@ -95,6 +95,11 @@ ro.vendor.display.foss=1
 vendor.display.foss.config=1
 vendor.display.foss.config_path=/vendor/etc/FOSSConfig.xml
 
+# Encryption
+ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.contents_mode=aes-256-xts
+ro.crypto.volume.filenames_mode=aes-256-cts
+
 # Graphics
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
