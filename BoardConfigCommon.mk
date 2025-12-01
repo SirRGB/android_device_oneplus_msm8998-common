@@ -31,7 +31,6 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a73
 
 # Kernel
 BOARD_KERNEL_CMDLINE := \
-    androidboot.console=0 \
     androidboot.hardware=qcom \
     msm_rtb.filter=0x37 \
     ehci-hcd.park=3 \
