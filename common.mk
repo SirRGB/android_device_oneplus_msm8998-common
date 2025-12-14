@@ -25,6 +25,7 @@ PRODUCT_ENFORCE_RRO_TARGETS += *
 PRODUCT_PACKAGES += \
     FrameworksResCommon \
     KeyHandlerResCommon \
+    LauncherResCommon \
     SettingsProviderResCommon \
     SettingsResCommon \
     SystemUIResCommon \
