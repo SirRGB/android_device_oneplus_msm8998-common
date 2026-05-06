@@ -19,7 +19,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/oneplus/msm8998-common',
+    'device/oneplus/cheesedump',
     'hardware/qcom-caf/msm8998',
     'hardware/qcom-caf/wlan',
     'hardware/oneplus',
@@ -79,15 +79,27 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libEIS.so',
     ): blob_fixup()
         .add_needed('libsensor1.so'),
+    # cheeseburger
+    'vendor/lib/libSonyIMX350PdafLibrary.so': blob_fixup()
+        .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
+    # dumpling
+    (
+        'vendor/lib/hw/fingerprint.goodix.so',
+        'vendor/lib64/hw/fingerprint.goodix.so',
+    ): blob_fixup()
+        .binary_regex_replace(b'\x00goodix.fingerprint\x00', b'\x00fingerprint\x00\x00\x00\x00\x00\x00\x00\x00'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'msm8998-common',
+    'cheesedump',
     'oneplus',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
 )
+
+module.add_proprietary_file('proprietary-files-cheeseburger.txt')
+module.add_proprietary_file('proprietary-files-dumpling.txt')
 
 if __name__ == '__main__':
     utils = ExtractUtils.device(module)

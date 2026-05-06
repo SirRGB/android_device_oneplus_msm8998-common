@@ -1,0 +1,68 @@
+# OnePlus 5T proprietary files - from
+# OnePlus/OnePlus5T/OnePlus5T:10/QKQ1.191014.012/2010292059, unless pinned
+
+# Audio ACDB
+vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:vendor/etc/acdbdata/dumpling/MTP/MTP_Bluetooth_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_General_cal.acdb:vendor/etc/acdbdata/dumpling/MTP/MTP_General_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb:vendor/etc/acdbdata/dumpling/MTP/MTP_Global_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb:vendor/etc/acdbdata/dumpling/MTP/MTP_Handset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb:vendor/etc/acdbdata/dumpling/MTP/MTP_Hdmi_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb:vendor/etc/acdbdata/dumpling/MTP/MTP_Headset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb:vendor/etc/acdbdata/dumpling/MTP/MTP_Speaker_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp:vendor/etc/acdbdata/dumpling/MTP/MTP_workspaceFile.qwsp
+vendor/etc/acdbdata/adsp_avs_config.acdb:vendor/etc/acdbdata/dumpling/adsp_avs_config.acdb
+
+# Audio firmware
+vendor/etc/firmware/tfa98xx.cnt:vendor/firmware/tfa98xx.cnt
+
+# Camera
+vendor/lib/hw/camera.msm8998.so
+vendor/lib/libmmcamera2_iface_modules.so
+vendor/lib/libmmcamera2_imglib_modules.so
+vendor/lib/libmmcamera2_mct.so
+vendor/lib/libmmcamera2_sensor_modules.so
+vendor/lib/libmmcamera2_stats_modules.so
+vendor/lib/libmmcamera_imx398.so
+
+# Camera actuators
+vendor/lib/libactuator_lc898217xc_imx376k.so
+
+# Camera chromatix
+vendor/lib/libchromatix_imx376k_3a_1840x1380_30fps_preview_bokeh.so
+vendor/lib/libchromatix_imx376k_3a_2592x1458_120fps_video.so
+vendor/lib/libchromatix_imx376k_3a_2592x1458_60fps_video.so
+vendor/lib/libchromatix_imx376k_3a_2592x1940_30fps_preview.so
+vendor/lib/libchromatix_imx376k_3a_2592x1940_30fps_preview_bokeh.so
+vendor/lib/libchromatix_imx376k_3a_2592x1940_30fps_preview_wechat.so
+vendor/lib/libchromatix_imx376k_common.so
+vendor/lib/libchromatix_imx376k_cpp_2592x1458_120fps_video.so
+vendor/lib/libchromatix_imx376k_cpp_2592x1458_60fps_video.so
+vendor/lib/libchromatix_imx376k_cpp_2592x1940_24fps_preview_bokeh.so
+vendor/lib/libchromatix_imx376k_cpp_2592x1940_24fps_snapshot_bokeh.so
+vendor/lib/libchromatix_imx376k_cpp_2592x1940_30fps_preview.so
+vendor/lib/libchromatix_imx376k_cpp_2592x1940_30fps_snapshot.so
+vendor/lib/libchromatix_imx376k_isp_2592x1458_120fps_video.so
+vendor/lib/libchromatix_imx376k_isp_2592x1458_60fps_video.so
+vendor/lib/libchromatix_imx376k_isp_2592x1940_24fps_snapshot_bokeh.so
+vendor/lib/libchromatix_imx376k_isp_2592x1940_30fps_snapshot.so
+vendor/lib/libchromatix_imx376k_postproc.so
+vendor/lib/libchromatix_imx398_3a_4608x3456_30fps_preview_bokeh.so
+vendor/lib/libchromatix_imx398_cpp_4608x3456_snapshot_bokeh.so
+
+# Camera etc
+vendor/etc/camera/imx376k_chromatix.xml
+vendor/etc/camera/imx398_chromatix.xml
+vendor/etc/oneplus5T_vstab_db_1080p_video_0_30fps.config
+vendor/etc/oneplus5T_vstab_db_1080p_video_0_60fps.config
+vendor/etc/oneplus5T_vstab_db_1080p_video_1_30fps.config
+vendor/etc/oneplus5T_vstab_db_4k_video_0_30fps.config
+vendor/etc/oneplus5T_vstab_db_720p_video_0_30fps.config
+vendor/etc/oneplus5T_vstab_db_720p_video_1_30fps.config
+
+# Fingerprint firmware loader - from sagit V11.0.6.0
+vendor/lib64/libgf_ca.so|a085af23228a871d67a6aa3122561f742a7bb822
+
+# Fingerprint sensor
+vendor/lib64/hw/goodix.fingerprint.msm8998.so:vendor/lib64/hw/fingerprint.msm8998.so;FIX_SONAME
+vendor/lib64/libgf_hal.so
+vendor/lib64/libgoodixfingerprintd_binder.so

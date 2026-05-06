@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-PLATFORM_PATH := device/oneplus/msm8998-common
+PLATFORM_PATH := device/oneplus/cheesedump
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := msm8998
@@ -100,6 +100,8 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Releasetools
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_oneplus
 TARGET_RELEASETOOLS_EXTENSIONS := $(PLATFORM_PATH)/releasetools
+TARGET_BOARD_INFO_FILE ?= $(PLATFORM_PATH)/board-info.txt
+TARGET_OTA_ASSERT_DEVICE := cheesedump,cheeseburger,OnePlus5,oneplus5,dumpling,OnePlus5T,oneplus5t
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
@@ -136,4 +138,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # inherit from the proprietary version
-include vendor/oneplus/msm8998-common/BoardConfigVendor.mk
+include vendor/oneplus/cheesedump/BoardConfigVendor.mk

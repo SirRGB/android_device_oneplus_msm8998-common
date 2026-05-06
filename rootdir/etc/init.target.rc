@@ -1,0 +1,64 @@
+service vendor.oneplus_device_script /vendor/bin/init.target.sh
+    class early_hal
+    user root
+    group root
+    oneshot
+
+on property:ro.vendor.oneplus.cheeseburger
+    # Fingerprint
+    chmod 0664 /sys/devices/soc/soc:fpc_fpc1020/irq
+    chown system system /sys/devices/soc/soc:fpc_fpc1020/irq
+    chmod 0660 /sys/devices/soc/soc:fpc_fpc1020/report_home
+    chown system system /sys/devices/soc/soc:fpc_fpc1020/report_home
+    chmod 0660 /sys/devices/soc/soc:fpc_fpc1020/report_key
+    chown system system /sys/devices/soc/soc:fpc_fpc1020/report_key
+    chmod 0660 /sys/devices/soc/soc:fpc_fpc1020/update_info
+    chown system system /sys/devices/soc/soc:fpc_fpc1020/update_info
+    chmod 0660 /sys/devices/soc/soc:fpc_fpc1020/screen_state
+    chown system system /sys/devices/soc/soc:fpc_fpc1020/screen_state
+    chmod 0660 /sys/devices/soc/soc:fpc_fpc1020/hw_reset
+    chown system system /sys/devices/soc/soc:fpc_fpc1020/hw_reset
+
+    # Proximity state
+    chown system system /sys/devices/soc/soc:fpc_fpc1020/proximity_state
+    chmod 0660 /sys/devices/soc/soc:fpc_fpc1020/proximity_state
+
+    # Touch panel
+    chown system system /proc/touchpanel/gesture_enable
+    chown system system /proc/touchpanel/gesture_switch
+    chown system system /proc/touchpanel/key_switch
+    chown system system /proc/touchpanel/key_disable
+    chown system system /proc/touchpanel/tpedge_limit_enable
+    chown system system /proc/touchpanel/tp_debug_log
+
+    # Hardware nav keys
+    chown system system /sys/bus/i2c/drivers/synaptics,s3320/tp_debug_log
+    chmod 0666 /sys/bus/i2c/drivers/synaptics,s3320/tp_debug_log
+
+    # KeyDisabler
+    chown system system /sys/module/fpc1020_tee/parameters/ignor_home_for_ESD
+    chmod 0666 /sys/module/fpc1020_tee/parameters/ignor_home_for_ESD
+
+    # Bluetooth
+    setprop bluetooth.device.default_name 'OnePlus 5'
+
+    # USB
+    setprop vendor.usb.product_string 'OnePlus 5'
+
+on property:ro.vendor.oneplus.dumpling
+    # Bluetooth
+    setprop bluetooth.device.default_name 'OnePlus 5T'
+
+    # USB
+    setprop vendor.usb.product_string 'OnePlus 5T'
+
+    # Fingerprint
+    chmod 0666 /dev/goodix_fp
+
+    # Proximity state
+    chown system system /sys/devices/soc/soc:goodix_fp/proximity_state
+    chmod 0660 /sys/devices/soc/soc:goodix_fp/proximity_state
+
+# OverlayFS
+on post-fs && property:ro.vendor.oneplus.cheeseburger
+    mount overlay overlay /vendor/etc/

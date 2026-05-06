@@ -1,0 +1,5 @@
+runtime_resource_overlay {
+    name: "DumplingWifiOverlay",
+    theme: "DumplingWifiOverlay",
+    product_specific: true,
+}
