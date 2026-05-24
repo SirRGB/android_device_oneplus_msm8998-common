@@ -143,6 +143,7 @@ ro.soc.manufacturer=Qualcomm
 ro.soc.model=MSM8998
 
 # SurfaceFlinger
+debug.renderengine.blur_algorithm=kawase2
 debug.sf.layer_caching_active_layer_timeout_ms=1000
 debug.sf.predict_hwc_composition_strategy=0
 ro.launcher.blur.appLaunch=0
