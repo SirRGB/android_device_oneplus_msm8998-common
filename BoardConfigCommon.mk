@@ -129,6 +129,7 @@ VENDOR_SECURITY_PATCH := 2020-09-01
 
 # SELinux
 TARGET_USES_LOGDUMP_AS_METADATA := true
+include device/lineage/sepolicy/libion/sepolicy.mk
 include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 
