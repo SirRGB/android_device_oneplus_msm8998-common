@@ -177,8 +177,7 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm-service.clearkey \
-    libcrypto_shim.vendor
+    android.hardware.drm-service.clearkey
 
 # Fastbootd
 PRODUCT_PACKAGES += \
@@ -221,10 +220,7 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
-    android.hidl.allocator@1.0.vendor \
-    libhidlmemory.vendor:64 \
-    libhwbinder \
-    libhwbinder.vendor
+    libhidlmemory.vendor:64
 
 # Init
 PRODUCT_PACKAGES += \
