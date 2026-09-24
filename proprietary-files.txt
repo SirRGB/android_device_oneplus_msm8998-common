@@ -520,6 +520,7 @@ vendor/lib64/libadreno_utils.so|f2b21eaf5b8aae2ad7611cbebb1e2eca15fd1f8f
 vendor/lib64/libc2d30_bltlib.so|9fe052fbb5a47b9d256c7a2ea849f86fed0b6fcf
 vendor/lib64/libgpudataproducer.so|9b3d3f08047848378bd552f95220e1f2013e1b81
 vendor/lib64/libgsl.so|b9b842c7585cbbf094cc131a85fc5fd0c11bb3e7
+vendor/lib64/libhdr_tm.so|a1b9bbad12217e6b79951774801aa54be6460fd6
 vendor/lib64/libllvm-glnext.so|993192308ee2b90607dbd9541ede2c93e66a0ecb
 vendor/lib64/libllvm-qcom.so|e773582b89436b4b2fd7e63983a5b7ca24748cfa
 vendor/lib64/librs_adreno.so|766453d2e3a4ab4a01908b78240abaa4f1b73d21
