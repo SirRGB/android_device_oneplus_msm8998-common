@@ -370,6 +370,10 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     telephony-ext
 
+# Radio config wrapper
+PRODUCT_PACKAGES += \
+    android.hardware.radio.config@1.1-service.wrapper
+
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
