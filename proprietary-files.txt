@@ -233,7 +233,6 @@ vendor/lib/libchromatix_imx398_postproc.so
 vendor/etc/camera/ashdr/iso617_4608x3456.ncf
 vendor/etc/camera/ashdr/ncf_pack.ncf
 vendor/etc/camera/ashdr/ncf_pack_imx371.ncf
-vendor/etc/camera/camera_config.xml
 vendor/etc/camera/imx371_chromatix.xml
 vendor/etc/sensors/hals.conf
 
